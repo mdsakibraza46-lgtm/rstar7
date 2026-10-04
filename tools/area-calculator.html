@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Area Calculator — Rectangle, Square, Circle &amp; Triangle | RStar7</title>
+<meta name="description" content="Calculate the area of rectangles, squares, circles and triangles with the formula shown. Free online area calculator for land, rooms and shapes.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.rstar7.com/tools/area-calculator.html">
+<meta name="theme-color" content="#5b4bff">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RStar7">
+<meta property="og:title" content="Area Calculator — Free Online Tool | RStar7">
+<meta property="og:description" content="Calculate the area of rectangles, squares, circles and triangles with the formula shown. Free online area calculator for land, rooms and shapes.">
+<meta property="og:url" content="https://www.rstar7.com/tools/area-calculator.html">
+<meta property="og:image" content="https://www.rstar7.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Area Calculator — Free Online Tool | RStar7">
+<meta name="twitter:description" content="Calculate the area of rectangles, squares, circles and triangles with the formula shown. Free online area calculator for land, rooms and shapes.">
+<meta name="twitter:image" content="https://www.rstar7.com/assets/og-image.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Area Calculator","url":"https://www.rstar7.com/tools/area-calculator.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Calculate the area of rectangles, squares, circles and triangles with the formula shown. Free online area calculator for land, rooms and shapes.","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"publisher":{"@type":"Organization","name":"RStar7","url":"https://www.rstar7.com/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.rstar7.com/"},{"@type":"ListItem","position":2,"name":"All Calculators","item":"https://www.rstar7.com/tools/"},{"@type":"ListItem","position":3,"name":"Area Calculator","item":"https://www.rstar7.com/tools/area-calculator.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which shapes are supported?","acceptedAnswer":{"@type":"Answer","text":"Rectangle, square, circle and triangle — the most common needs. The relevant input fields are required per shape."}},{"@type":"Question","name":"How do I calculate circle area?","acceptedAnswer":{"@type":"Answer","text":"Choose circle and enter the radius. Area = π × r². A circle of radius 2 has area ≈ 12.57 square units."}},{"@type":"Question","name":"Are results in square metres or feet?","acceptedAnswer":{"@type":"Answer","text":"The result is in “square units” — whatever unit you entered. If dimensions are in metres, the area is in square metres; feet give square feet."}}]}</script>
+</head>
+<body data-tool="area-calculator">
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+<div class="wrap nav">
+<a class="logo" href="../index.html">R<span>Star7</span></a>
+<nav aria-label="Main navigation">
+<a href="../index.html">Home</a>
+<a href="index.html">All Tools</a>
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main class="wrap" id="main">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="index.html">All Calculators</a> › <span aria-current="page">Area Calculator</span></nav>
+<div class="calc">
+<p class="eyebrow">Daily Life</p>
+<div class="calc-head">
+<h1>Area Calculator</h1>
+<p>Choose a shape and enter its dimensions to get the area instantly — the formula used is always shown.</p>
+</div>
+<form onsubmit="event.preventDefault();r7submit(this)" novalidate>
+<label for="shape">Shape
+<select id="shape"><option value="rectangle">Rectangle (length × width)</option><option value="square">Square (side²)</option><option value="circle">Circle (π r²)</option><option value="triangle">Triangle (½ b × h)</option></select></label>
+<label for="a"><span id="lblA">Length / radius / side</span>
+<input id="a" type="number" placeholder="e.g. 10" min="0" step="any" required></label>
+<label for="b"><span id="lblB">Width (rectangle only)</span>
+<input id="b" type="number" placeholder="e.g. 5" min="0" step="any"></label>
+<label for="h"><span id="lblH">Height (triangle only)</span>
+<input id="h" type="number" placeholder="e.g. 4" min="0" step="any"></label>
+
+<button type="submit">Calculate</button>
+</form>
+<div id="result" role="status" aria-live="polite">Your result will appear here.</div>
+</div>
+<section class="prose" aria-label="About the Area Calculator">
+<h2>About the Area Calculator</h2>
+<p>Area calculations come up in flooring, painting, gardening, land measurement and schoolwork. Each shape has its own formula, and using the wrong one is a common mistake.</p>
+<p>Select the shape — rectangle, square, circle or triangle — and fill in the fields that appear. The calculator computes the area and displays the exact formula used, with all inputs validated so nothing silently returns a wrong number.</p>
+<h2>Formula used</h2>
+<div class="formula-box">Rectangle = l × w   |   Square = s²   |   Circle = π r²   |   Triangle = ½ × b × h</div>
+<p class="result-note">Results are calculated in your browser — nothing is sent to or stored on any server.</p>
+</section>
+<section class="faq" aria-label="Frequently asked questions about the Area Calculator">
+<h2>Frequently asked questions</h2>
+<details><summary>Which shapes are supported?</summary><p>Rectangle, square, circle and triangle — the most common needs. The relevant input fields are required per shape.</p></details>
+<details><summary>How do I calculate circle area?</summary><p>Choose circle and enter the radius. Area = π × r². A circle of radius 2 has area ≈ 12.57 square units.</p></details>
+<details><summary>Are results in square metres or feet?</summary><p>The result is in “square units” — whatever unit you entered. If dimensions are in metres, the area is in square metres; feet give square feet.</p></details>
+</section>
+<section class="adbox" aria-hidden="true">Advertisement</section>
+</main>
+<footer>
+<div class="wrap foot-grid">
+<div><b>RStar7</b><p>Free online calculators and useful tools for everyday decisions.<br><a href="mailto:info@rstar7.com" style="color:inherit">info@rstar7.com</a> · <a href="https://wa.me/919063827617" rel="noopener" target="_blank" style="color:inherit">WhatsApp +91 90638 27617</a></p></div>
+<nav aria-label="Footer navigation">
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+<a href="../privacy.html">Privacy Policy</a>
+<a href="../terms.html">Terms of Use</a>
+<a href="../disclaimer.html">Disclaimer</a>
+</nav>
+<small>© <span id="yr">2026</span> RStar7. All rights reserved.</small>
+</div>
+</footer>
+<script src="../assets/calculators.js"></script>
+<script src="../assets/r7-ui.js"></script>
+<script>
+(function(){
+  var L={rectangle:{a:'Length',b:'Width',h:''},square:{a:'Side',b:'',h:''},circle:{a:'Radius',b:'',h:''},triangle:{a:'',b:'Base',h:'Height'}};
+  var s=document.getElementById('shape'),la=document.getElementById('lblA'),lb=document.getElementById('lblB'),lh=document.getElementById('lblH'),fa=document.getElementById('a'),fb=document.getElementById('b'),fh=document.getElementById('h');
+  function upd(){
+    var m=L[s.value]||{};
+    la.textContent=m.a?m.a:'— (not needed for this shape)';la.style.opacity=m.a?1:.45;
+    lb.textContent=m.b?m.b+' (required)':'— (not needed for this shape)';lb.style.opacity=m.b?1:.45;
+    lh.textContent=m.h?m.h+' (required)':'— (not needed for this shape)';lh.style.opacity=m.h?1:.45;
+  }
+  s.addEventListener('change',upd);upd();
+})();
+</script>
+</body>
+</html>

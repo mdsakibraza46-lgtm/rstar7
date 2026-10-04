@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Compound Interest Calculator — Growth with Any Compounding | RStar7</title>
+<meta name="description" content="Calculate compound interest with yearly, half-yearly, quarterly, monthly or daily compounding. See future value and interest earned instantly.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.rstar7.com/tools/compound-interest-calculator.html">
+<meta name="theme-color" content="#5b4bff">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RStar7">
+<meta property="og:title" content="Compound Interest Calculator — Free Online Tool | RStar7">
+<meta property="og:description" content="Calculate compound interest with yearly, half-yearly, quarterly, monthly or daily compounding. See future value and interest earned instantly.">
+<meta property="og:url" content="https://www.rstar7.com/tools/compound-interest-calculator.html">
+<meta property="og:image" content="https://www.rstar7.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Compound Interest Calculator — Free Online Tool | RStar7">
+<meta name="twitter:description" content="Calculate compound interest with yearly, half-yearly, quarterly, monthly or daily compounding. See future value and interest earned instantly.">
+<meta name="twitter:image" content="https://www.rstar7.com/assets/og-image.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Compound Interest Calculator","url":"https://www.rstar7.com/tools/compound-interest-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Calculate compound interest with yearly, half-yearly, quarterly, monthly or daily compounding. See future value and interest earned instantly.","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"publisher":{"@type":"Organization","name":"RStar7","url":"https://www.rstar7.com/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.rstar7.com/"},{"@type":"ListItem","position":2,"name":"All Calculators","item":"https://www.rstar7.com/tools/"},{"@type":"ListItem","position":3,"name":"Compound Interest Calculator","item":"https://www.rstar7.com/tools/compound-interest-calculator.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does compounding frequency mean?","acceptedAnswer":{"@type":"Answer","text":"It is how many times per year interest is added to the balance. n=1 yearly, 2 half-yearly, 4 quarterly, 12 monthly, 365 daily."}},{"@type":"Question","name":"Which compounding frequency gives the highest return?","acceptedAnswer":{"@type":"Answer","text":"For the same nominal rate, more frequent compounding yields more. Daily compounding beats monthly, which beats quarterly and yearly."}},{"@type":"Question","name":"Is compound interest better than simple interest?","acceptedAnswer":{"@type":"Answer","text":"For savers, yes — compound interest always yields at least as much as simple interest for positive rates and periods of one year or more."}}]}</script>
+</head>
+<body data-tool="compound-interest-calculator">
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+<div class="wrap nav">
+<a class="logo" href="../index.html">R<span>Star7</span></a>
+<nav aria-label="Main navigation">
+<a href="../index.html">Home</a>
+<a href="index.html">All Tools</a>
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main class="wrap" id="main">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="index.html">All Calculators</a> › <span aria-current="page">Compound Interest Calculator</span></nav>
+<div class="calc">
+<p class="eyebrow">Finance</p>
+<div class="calc-head">
+<h1>Compound Interest Calculator</h1>
+<p>See how money grows with compounding — choose yearly, half-yearly, quarterly, monthly or daily compounding and compare the difference.</p>
+</div>
+<form onsubmit="event.preventDefault();r7submit(this)" novalidate>
+<label for="principal">Principal amount (₹)
+<input id="principal" type="number" placeholder="e.g. 100000" min="0" step="any" required></label>
+<label for="rate">Interest rate (p.a. %)
+<input id="rate" type="number" placeholder="e.g. 10" min="0" step="any" required></label>
+<label for="years">Time period (years)
+<input id="years" type="number" placeholder="e.g. 5" min="0" step="any" required></label>
+<label for="times">Compounding per year
+<select id="times"><option value="1">Yearly (1)</option><option value="2">Half-yearly (2)</option><option value="4">Quarterly (4)</option><option value="12">Monthly (12)</option><option value="365">Daily (365)</option></select></label>
+
+<button type="submit">Calculate</button>
+</form>
+<div id="result" role="status" aria-live="polite">Your result will appear here.</div>
+</div>
+<section class="prose" aria-label="About the Compound Interest Calculator">
+<h2>About the Compound Interest Calculator</h2>
+<p>Compound interest means your interest also earns interest. The more frequently interest is compounded, the faster your money grows — this calculator lets you compare frequencies directly.</p>
+<p>Enter the principal, annual rate, time in years and how many times interest compounds per year. The result shows the future value, the total interest earned and how much extra compounding frequency adds over simple annual growth.</p>
+<h2>Formula used</h2>
+<div class="formula-box">A = P × (1 + r/n)^(n×t)   where P = principal, r = annual rate, n = compounds per year, t = years</div>
+<p class="result-note">Results are calculated in your browser — nothing is sent to or stored on any server.</p>
+</section>
+<section class="faq" aria-label="Frequently asked questions about the Compound Interest Calculator">
+<h2>Frequently asked questions</h2>
+<details><summary>What does compounding frequency mean?</summary><p>It is how many times per year interest is added to the balance. n=1 yearly, 2 half-yearly, 4 quarterly, 12 monthly, 365 daily.</p></details>
+<details><summary>Which compounding frequency gives the highest return?</summary><p>For the same nominal rate, more frequent compounding yields more. Daily compounding beats monthly, which beats quarterly and yearly.</p></details>
+<details><summary>Is compound interest better than simple interest?</summary><p>For savers, yes — compound interest always yields at least as much as simple interest for positive rates and periods of one year or more.</p></details>
+</section>
+<section class="adbox" aria-hidden="true">Advertisement</section>
+</main>
+<footer>
+<div class="wrap foot-grid">
+<div><b>RStar7</b><p>Free online calculators and useful tools for everyday decisions.<br><a href="mailto:info@rstar7.com" style="color:inherit">info@rstar7.com</a> · <a href="https://wa.me/919063827617" rel="noopener" target="_blank" style="color:inherit">WhatsApp +91 90638 27617</a></p></div>
+<nav aria-label="Footer navigation">
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+<a href="../privacy.html">Privacy Policy</a>
+<a href="../terms.html">Terms of Use</a>
+<a href="../disclaimer.html">Disclaimer</a>
+</nav>
+<small>© <span id="yr">2026</span> RStar7. All rights reserved.</small>
+</div>
+</footer>
+<script src="../assets/calculators.js"></script>
+<script src="../assets/r7-ui.js"></script>
+</body>
+</html>
