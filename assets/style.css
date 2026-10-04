@@ -1,0 +1,126 @@
+/*!
+ * RStar7 V3.1 — Stylesheet
+ * Based on the original RStar7 V3 Professional design (colors, cards, hero).
+ * Improvements: sticky footer, error/success result states, form selects,
+ * FAQ + article styles, breadcrumbs, accessibility (focus rings, skip link),
+ * smoother responsive behaviour on small screens.
+ */
+:root{--bg:#f7f8fc;--card:#fff;--text:#172033;--muted:#667085;--line:#e6e8ef;--accent:#5b4bff;--accent2:#3d2fe0;--ok-bg:#eefbf1;--ok-line:#bfe8cd;--err-bg:#fff1f0;--err-line:#ffd4cc;--err-text:#a3331f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
+main{flex:1;width:100%}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto}
+.wrap{max-width:1120px;margin:auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--accent);color:#fff;padding:10px 16px;border-radius:0 0 10px 0;z-index:100;font-weight:700}
+.skip-link:focus{left:0}
+
+/* ---------- header / nav ---------- */
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.logo{font-size:25px;font-weight:900;letter-spacing:-1px}
+.logo span{color:var(--accent)}
+nav{display:flex;gap:24px;font-size:14px;font-weight:650;flex-wrap:wrap}
+nav a:hover,.section-head a:hover{color:var(--accent)}
+nav a[aria-current="page"]{color:var(--accent)}
+
+/* ---------- hero / home ---------- */
+.hero{margin:55px 0 45px;display:grid;grid-template-columns:1.5fr .7fr;gap:30px;align-items:center}
+.eyebrow{color:var(--accent);font-size:12px;font-weight:850;letter-spacing:1.5px;margin:0 0 7px;text-transform:uppercase}
+h1{font-size:clamp(34px,6vw,64px);line-height:1.05;letter-spacing:-2.5px;margin:0 0 18px}
+h2{font-size:30px;line-height:1.15;margin:0 0 10px}
+.hero p:not(.eyebrow),.page>p,.page-intro{color:var(--muted);font-size:17px;max-width:700px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 18px;border-radius:12px;font-weight:750;margin-top:8px;min-height:44px;line-height:1.4}
+.btn:hover{background:var(--accent2)}
+.hero-card{background:linear-gradient(145deg,#171c35,#35309c);color:#fff;border-radius:24px;padding:40px;text-align:center;box-shadow:0 18px 45px #27305a22}
+.hero-number{font-size:64px;font-weight:900;line-height:1}
+.hero-card small{display:block;opacity:.7;margin-top:12px}
+.section-head{display:flex;justify-content:space-between;align-items:end;margin:35px 0 18px;gap:12px}
+.section-head>a{color:var(--accent);font-weight:700;white-space:nowrap}
+
+/* ---------- grids & cards ---------- */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tool{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:21px;transition:.18s;box-shadow:0 4px 16px #17203308;display:block}
+.tool:hover{transform:translateY(-3px);box-shadow:0 10px 28px #17203312}
+.tool h3{margin:0 0 6px;font-size:18px}
+.tool p{margin:0;color:var(--muted);font-size:14px}
+.tag{display:inline-block;margin-top:13px;background:#f0efff;color:var(--accent);padding:4px 8px;border-radius:7px;font-size:11px;font-weight:800}
+.tool[hidden]{display:none}
+.adbox{height:90px;border:1px dashed #c9cdd8;border-radius:12px;display:grid;place-items:center;color:#9aa1b1;margin:45px 0}
+.info{padding:10px 0 55px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.features>div{background:#fff;border:1px solid var(--line);padding:20px;border-radius:15px}
+.features p{color:var(--muted);margin-bottom:0}
+
+/* ---------- generic pages ---------- */
+.page{padding-top:45px;padding-bottom:60px}
+.search{width:100%;padding:15px 17px;border:1px solid var(--line);border-radius:12px;background:#fff;font-size:16px;margin:20px 0 25px;outline:none}
+.search:focus{border-color:var(--accent)}
+.no-results{display:none;color:var(--muted);padding:26px 0}
+
+/* ---------- calculator ---------- */
+.breadcrumb{font-size:13px;color:var(--muted);margin:22px 0 0}
+.breadcrumb a{color:var(--muted)}
+.breadcrumb a:hover{color:var(--accent)}
+.calc{max-width:700px;margin:25px auto 60px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 8px 30px #1720330a}
+.calc h1{font-size:clamp(28px,5vw,38px);letter-spacing:-1px}
+.calc-head p{color:var(--muted);margin:6px 0 0}
+.calc form{margin-top:10px}
+label{display:block;font-weight:700;margin:15px 0 6px}
+input,select{display:block;width:100%;padding:13px;border:1px solid var(--line);border-radius:10px;font-size:16px;margin-top:6px;background:#fff;font-family:inherit;color:var(--text)}
+input:focus,select:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px #5b4bff22}
+.hint{font-size:13px;color:var(--muted);font-weight:500;margin-top:4px}
+button{border:0;background:var(--accent);color:#fff;padding:13px 20px;border-radius:10px;font-weight:800;font-size:16px;margin-top:18px;cursor:pointer;min-height:48px}
+button:hover{background:var(--accent2)}
+#result{margin-top:22px;background:#f4f3ff;border-radius:12px;padding:18px;min-height:70px}
+#result.error{background:var(--err-bg);border:1px solid var(--err-line);color:var(--err-text)}
+#result .result-value{font-size:clamp(20px,4.5vw,24px);font-weight:850;margin-top:5px;overflow-wrap:anywhere}
+#result .result-sub{color:var(--muted);font-size:14px;margin-top:6px}
+#result .result-rows{margin-top:12px;border-top:1px solid #e3e0ff;padding-top:10px}
+#result .result-rows div{display:flex;justify-content:space-between;gap:14px;padding:3px 0;font-size:15px}
+#result .result-rows div b{font-weight:700}
+.result-note{font-size:13px;color:var(--muted);margin-top:10px}
+
+/* ---------- article / FAQ ---------- */
+.prose{max-width:760px;margin:0 auto;padding-bottom:40px}
+.prose h2{margin-top:34px}
+.prose p,.prose li{color:#3d4660}
+.prose .back{display:inline-block;margin-bottom:18px;color:var(--accent);font-weight:700}
+.faq{max-width:760px;margin:0 auto 50px;padding:0 0 10px}
+.faq h2{margin:30px 0 14px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+.faq summary{font-weight:700;cursor:pointer}
+.faq details p{color:#3d4660;margin:10px 0 2px}
+.formula-box{background:#f4f3ff;border-radius:12px;padding:14px 18px;margin:16px 0;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:15px;overflow-x:auto}
+
+/* ---------- footer ---------- */
+footer{background:#fff;border-top:1px solid var(--line);padding:30px 0;color:var(--muted);margin-top:auto}
+.foot-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{margin-right:16px;color:var(--text)}
+footer a:hover{color:var(--accent)}
+footer small{display:block;margin-top:15px}
+
+/* ---------- responsive ---------- */
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){
+  nav{gap:14px;font-size:13px}
+  .hero{grid-template-columns:1fr;margin-top:35px}
+  .hero-card{padding:28px}
+  .features{grid-template-columns:1fr}
+  h1{letter-spacing:-1.5px}
+  .section-head{align-items:center}
+  .calc{padding:20px 16px}
+}
+@media(max-width:520px){
+  .grid{grid-template-columns:1fr}
+  .nav{align-items:flex-start}
+  nav{flex-wrap:wrap;justify-content:flex-start}
+  .hero-number{font-size:52px}
+  .foot-grid{flex-direction:column}
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
