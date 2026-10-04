@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>RD Calculator — Recurring Deposit Maturity Value | RStar7</title>
+<meta name="description" content="Estimate your recurring deposit maturity amount and interest. Enter monthly deposit, rate and months — get an instant RD maturity estimate. Free tool.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.rstar7.com/tools/rd-calculator.html">
+<meta name="theme-color" content="#5b4bff">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RStar7">
+<meta property="og:title" content="RD Calculator — Free Online Tool | RStar7">
+<meta property="og:description" content="Estimate your recurring deposit maturity amount and interest. Enter monthly deposit, rate and months — get an instant RD maturity estimate. Free tool.">
+<meta property="og:url" content="https://www.rstar7.com/tools/rd-calculator.html">
+<meta property="og:image" content="https://www.rstar7.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RD Calculator — Free Online Tool | RStar7">
+<meta name="twitter:description" content="Estimate your recurring deposit maturity amount and interest. Enter monthly deposit, rate and months — get an instant RD maturity estimate. Free tool.">
+<meta name="twitter:image" content="https://www.rstar7.com/assets/og-image.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"RD Calculator","url":"https://www.rstar7.com/tools/rd-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Estimate your recurring deposit maturity amount and interest. Enter monthly deposit, rate and months — get an instant RD maturity estimate. Free tool.","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"publisher":{"@type":"Organization","name":"RStar7","url":"https://www.rstar7.com/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.rstar7.com/"},{"@type":"ListItem","position":2,"name":"All Calculators","item":"https://www.rstar7.com/tools/"},{"@type":"ListItem","position":3,"name":"RD Calculator","item":"https://www.rstar7.com/tools/rd-calculator.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why is the result called approximate?","acceptedAnswer":{"@type":"Answer","text":"The formula is a standard approximation that assumes simple monthly interest accumulation. Banks compounding quarterly credit interest slightly differently, so the exact maturity can differ marginally."}},{"@type":"Question","name":"What is the minimum RD tenure?","acceptedAnswer":{"@type":"Answer","text":"Most banks offer RDs from 6 months to 10 years. Enter any tenure in months to estimate its maturity."}},{"@type":"Question","name":"Is RD interest taxable?","acceptedAnswer":{"@type":"Answer","text":"Yes — RD interest is taxable as per your income-tax slab, and TDS applies above the bank’s specified interest threshold."}}]}</script>
+</head>
+<body data-tool="rd-calculator">
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+<div class="wrap nav">
+<a class="logo" href="../index.html">R<span>Star7</span></a>
+<nav aria-label="Main navigation">
+<a href="../index.html">Home</a>
+<a href="index.html">All Tools</a>
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main class="wrap" id="main">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="index.html">All Calculators</a> › <span aria-current="page">RD Calculator</span></nav>
+<div class="calc">
+<p class="eyebrow">Finance</p>
+<div class="calc-head">
+<h1>RD Calculator</h1>
+<p>Plan your recurring deposit — see the approximate maturity value and interest for any monthly amount, rate and duration.</p>
+</div>
+<form onsubmit="event.preventDefault();r7submit(this)" novalidate>
+<label for="monthly">Monthly deposit (₹)
+<input id="monthly" type="number" placeholder="e.g. 2000" min="0" step="any" required></label>
+<label for="rate">Interest rate (p.a. %)
+<input id="rate" type="number" placeholder="e.g. 7" min="0" step="any" required></label>
+<label for="months">Time period (months)
+<input id="months" type="number" placeholder="e.g. 24" min="1" step="1" required></label>
+
+<button type="submit">Calculate</button>
+</form>
+<div id="result" role="status" aria-live="polite">Your result will appear here.</div>
+</div>
+<section class="prose" aria-label="About the RD Calculator">
+<h2>About the RD Calculator</h2>
+<p>A Recurring Deposit (RD) lets you deposit a fixed sum every month and earn interest on it, making it ideal for salaried savers building a corpus gradually.</p>
+<p>This calculator uses the widely used RD approximation formula that values each monthly instalment for the number of months it stays invested. It shows the total deposited, the estimated interest and the approximate maturity value. Banks that compound quarterly may credit slightly different interest — use the result as a close estimate.</p>
+<h2>Formula used</h2>
+<div class="formula-box">Maturity ≈ R × n + R × n(n+1)/2 × i   where R = monthly deposit, n = months, i = monthly rate (annual ÷ 12)</div>
+<p class="result-note">Results are calculated in your browser — nothing is sent to or stored on any server.</p>
+</section>
+<section class="faq" aria-label="Frequently asked questions about the RD Calculator">
+<h2>Frequently asked questions</h2>
+<details><summary>Why is the result called approximate?</summary><p>The formula is a standard approximation that assumes simple monthly interest accumulation. Banks compounding quarterly credit interest slightly differently, so the exact maturity can differ marginally.</p></details>
+<details><summary>What is the minimum RD tenure?</summary><p>Most banks offer RDs from 6 months to 10 years. Enter any tenure in months to estimate its maturity.</p></details>
+<details><summary>Is RD interest taxable?</summary><p>Yes — RD interest is taxable as per your income-tax slab, and TDS applies above the bank’s specified interest threshold.</p></details>
+</section>
+<section class="adbox" aria-hidden="true">Advertisement</section>
+</main>
+<footer>
+<div class="wrap foot-grid">
+<div><b>RStar7</b><p>Free online calculators and useful tools for everyday decisions.<br><a href="mailto:info@rstar7.com" style="color:inherit">info@rstar7.com</a> · <a href="https://wa.me/919063827617" rel="noopener" target="_blank" style="color:inherit">WhatsApp +91 90638 27617</a></p></div>
+<nav aria-label="Footer navigation">
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+<a href="../privacy.html">Privacy Policy</a>
+<a href="../terms.html">Terms of Use</a>
+<a href="../disclaimer.html">Disclaimer</a>
+</nav>
+<small>© <span id="yr">2026</span> RStar7. All rights reserved.</small>
+</div>
+</footer>
+<script src="../assets/calculators.js"></script>
+<script src="../assets/r7-ui.js"></script>
+</body>
+</html>

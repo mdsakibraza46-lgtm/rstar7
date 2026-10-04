@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Google AdSense crawler (if you run ads)
+User-agent: Mediapartners-Google
+Allow: /
+
+# AI/answer engines may crawl; block only if you prefer
+User-agent: GPTBot
+Allow: /
+
+Sitemap: https://www.rstar7.com/sitemap.xml

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Fuel Cost Calculator — Trip Petrol/Diesel Cost Estimate | RStar7</title>
+<meta name="description" content="Estimate the fuel cost of any trip: enter distance, vehicle mileage (km per litre) and fuel price to get litres needed and total cost. Free tool.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.rstar7.com/tools/fuel-cost-calculator.html">
+<meta name="theme-color" content="#5b4bff">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RStar7">
+<meta property="og:title" content="Fuel Cost Calculator — Free Online Tool | RStar7">
+<meta property="og:description" content="Estimate the fuel cost of any trip: enter distance, vehicle mileage (km per litre) and fuel price to get litres needed and total cost. Free tool.">
+<meta property="og:url" content="https://www.rstar7.com/tools/fuel-cost-calculator.html">
+<meta property="og:image" content="https://www.rstar7.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fuel Cost Calculator — Free Online Tool | RStar7">
+<meta name="twitter:description" content="Estimate the fuel cost of any trip: enter distance, vehicle mileage (km per litre) and fuel price to get litres needed and total cost. Free tool.">
+<meta name="twitter:image" content="https://www.rstar7.com/assets/og-image.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Fuel Cost Calculator","url":"https://www.rstar7.com/tools/fuel-cost-calculator.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Estimate the fuel cost of any trip: enter distance, vehicle mileage (km per litre) and fuel price to get litres needed and total cost. Free tool.","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"publisher":{"@type":"Organization","name":"RStar7","url":"https://www.rstar7.com/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.rstar7.com/"},{"@type":"ListItem","position":2,"name":"All Calculators","item":"https://www.rstar7.com/tools/"},{"@type":"ListItem","position":3,"name":"Fuel Cost Calculator","item":"https://www.rstar7.com/tools/fuel-cost-calculator.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is fuel cost calculated?","acceptedAnswer":{"@type":"Answer","text":"Litres needed = distance ÷ mileage (km per litre). Cost = litres × price per litre. A 300 km trip at 15 km/l and ₹105/l needs 20 litres, costing ₹2,100."}},{"@type":"Question","name":"Can I use this for diesel and CNG?","acceptedAnswer":{"@type":"Answer","text":"Yes — enter the price per litre/kg of whatever fuel your vehicle uses, and its efficiency in km per litre (or kg)."}},{"@type":"Question","name":"Why do my real costs differ slightly?","acceptedAnswer":{"@type":"Answer","text":"Traffic, AC usage, terrain and driving style change real-world mileage. Use your own measured average for the best estimate."}}]}</script>
+</head>
+<body data-tool="fuel-cost-calculator">
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+<div class="wrap nav">
+<a class="logo" href="../index.html">R<span>Star7</span></a>
+<nav aria-label="Main navigation">
+<a href="../index.html">Home</a>
+<a href="index.html">All Tools</a>
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main class="wrap" id="main">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="index.html">All Calculators</a> › <span aria-current="page">Fuel Cost Calculator</span></nav>
+<div class="calc">
+<p class="eyebrow">Daily Life</p>
+<div class="calc-head">
+<h1>Fuel Cost Calculator</h1>
+<p>Estimate what a trip will cost in fuel — enter the distance, your vehicle’s mileage and the price of fuel.</p>
+</div>
+<form onsubmit="event.preventDefault();r7submit(this)" novalidate>
+<label for="distance">Trip distance (km)
+<input id="distance" type="number" placeholder="e.g. 300" min="0" step="any" required></label>
+<label for="efficiency">Fuel efficiency (km per litre)
+<input id="efficiency" type="number" placeholder="e.g. 15" min="0.1" step="any" required></label>
+<label for="price">Fuel price (₹ per litre)
+<input id="price" type="number" placeholder="e.g. 105" min="0" step="any" required></label>
+
+<button type="submit">Calculate</button>
+</form>
+<div id="result" role="status" aria-live="polite">Your result will appear here.</div>
+</div>
+<section class="prose" aria-label="About the Fuel Cost Calculator">
+<h2>About the Fuel Cost Calculator</h2>
+<p>Trip fuel cost depends on three things: distance, fuel efficiency (km per litre) and the price of petrol or diesel. This calculator multiplies them out and also shows the fuel needed and the effective cost per kilometre.</p>
+<p>Use it to split travel costs among friends, compare two-wheelers and cars, or budget road trips. For accuracy, use your vehicle’s real-world mileage rather than the brochure figure.</p>
+<h2>Formula used</h2>
+<div class="formula-box">Litres needed = distance ÷ mileage   |   Fuel cost = litres × price per litre</div>
+<p class="result-note">Results are calculated in your browser — nothing is sent to or stored on any server.</p>
+</section>
+<section class="faq" aria-label="Frequently asked questions about the Fuel Cost Calculator">
+<h2>Frequently asked questions</h2>
+<details><summary>How is fuel cost calculated?</summary><p>Litres needed = distance ÷ mileage (km per litre). Cost = litres × price per litre. A 300 km trip at 15 km/l and ₹105/l needs 20 litres, costing ₹2,100.</p></details>
+<details><summary>Can I use this for diesel and CNG?</summary><p>Yes — enter the price per litre/kg of whatever fuel your vehicle uses, and its efficiency in km per litre (or kg).</p></details>
+<details><summary>Why do my real costs differ slightly?</summary><p>Traffic, AC usage, terrain and driving style change real-world mileage. Use your own measured average for the best estimate.</p></details>
+</section>
+<section class="adbox" aria-hidden="true">Advertisement</section>
+</main>
+<footer>
+<div class="wrap foot-grid">
+<div><b>RStar7</b><p>Free online calculators and useful tools for everyday decisions.<br><a href="mailto:info@rstar7.com" style="color:inherit">info@rstar7.com</a> · <a href="https://wa.me/919063827617" rel="noopener" target="_blank" style="color:inherit">WhatsApp +91 90638 27617</a></p></div>
+<nav aria-label="Footer navigation">
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+<a href="../privacy.html">Privacy Policy</a>
+<a href="../terms.html">Terms of Use</a>
+<a href="../disclaimer.html">Disclaimer</a>
+</nav>
+<small>© <span id="yr">2026</span> RStar7. All rights reserved.</small>
+</div>
+</footer>
+<script src="../assets/calculators.js"></script>
+<script src="../assets/r7-ui.js"></script>
+</body>
+</html>

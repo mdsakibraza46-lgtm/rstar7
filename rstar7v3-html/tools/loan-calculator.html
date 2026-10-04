@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Loan Calculator — Monthly Payment, Total Interest &amp; Repayment | RStar7</title>
+<meta name="description" content="Work out the monthly payment, total interest and total repayment for any loan. Enter amount, rate and tenure — results in seconds, completely free.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.rstar7.com/tools/loan-calculator.html">
+<meta name="theme-color" content="#5b4bff">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RStar7">
+<meta property="og:title" content="Loan Calculator — Free Online Tool | RStar7">
+<meta property="og:description" content="Work out the monthly payment, total interest and total repayment for any loan. Enter amount, rate and tenure — results in seconds, completely free.">
+<meta property="og:url" content="https://www.rstar7.com/tools/loan-calculator.html">
+<meta property="og:image" content="https://www.rstar7.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Loan Calculator — Free Online Tool | RStar7">
+<meta name="twitter:description" content="Work out the monthly payment, total interest and total repayment for any loan. Enter amount, rate and tenure — results in seconds, completely free.">
+<meta name="twitter:image" content="https://www.rstar7.com/assets/og-image.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Loan Calculator","url":"https://www.rstar7.com/tools/loan-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Work out the monthly payment, total interest and total repayment for any loan. Enter amount, rate and tenure — results in seconds, completely free.","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"publisher":{"@type":"Organization","name":"RStar7","url":"https://www.rstar7.com/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.rstar7.com/"},{"@type":"ListItem","position":2,"name":"All Calculators","item":"https://www.rstar7.com/tools/"},{"@type":"ListItem","position":3,"name":"Loan Calculator","item":"https://www.rstar7.com/tools/loan-calculator.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between loan amount and total repayment?","acceptedAnswer":{"@type":"Answer","text":"The loan amount (principal) is what you borrow. The total repayment is the principal plus all interest charged over the tenure — the actual money that leaves your pocket."}},{"@type":"Question","name":"Does a longer tenure mean a cheaper loan?","acceptedAnswer":{"@type":"Answer","text":"A longer tenure lowers your monthly payment but increases the total interest paid over the life of the loan. A shorter tenure costs more per month but less overall."}},{"@type":"Question","name":"Is this the same formula banks use?","acceptedAnswer":{"@type":"Answer","text":"Yes — the calculator uses the standard reducing-balance EMI formula used by banks and NBFCs for retail loans."}}]}</script>
+</head>
+<body data-tool="loan-calculator">
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+<div class="wrap nav">
+<a class="logo" href="../index.html">R<span>Star7</span></a>
+<nav aria-label="Main navigation">
+<a href="../index.html">Home</a>
+<a href="index.html">All Tools</a>
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main class="wrap" id="main">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="index.html">All Calculators</a> › <span aria-current="page">Loan Calculator</span></nav>
+<div class="calc">
+<p class="eyebrow">Finance</p>
+<div class="calc-head">
+<h1>Loan Calculator</h1>
+<p>Estimate what any loan will really cost you — the monthly payment, the total interest charged and the full repayment amount.</p>
+</div>
+<form onsubmit="event.preventDefault();r7submit(this)" novalidate>
+<label for="principal">Loan amount (₹)
+<input id="principal" type="number" placeholder="e.g. 1000000" min="0" step="any" required></label>
+<label for="rate">Annual interest rate (%)
+<input id="rate" type="number" placeholder="e.g. 9" min="0" step="any" required></label>
+<label for="months">Loan term (months)
+<input id="months" type="number" placeholder="e.g. 240" min="1" step="1" required></label>
+
+<button type="submit">Calculate</button>
+</form>
+<div id="result" role="status" aria-live="polite">Your result will appear here.</div>
+</div>
+<section class="prose" aria-label="About the Loan Calculator">
+<h2>About the Loan Calculator</h2>
+<p>Before borrowing, it pays to know the full cost of a loan — not just the monthly payment. Two loans with the same EMI can have very different total interest depending on the rate and tenure.</p>
+<p>Enter the loan amount, annual interest rate and tenure in months. The calculator shows the estimated monthly instalment using the standard reducing-balance method, the total repayment over the entire period and the total interest you will pay.</p>
+<h2>Formula used</h2>
+<div class="formula-box">Monthly payment = P × r × (1+r)^n / ((1+r)^n − 1)   |   Total repayment = payment × n   |   Total interest = total repayment − P</div>
+<p class="result-note">Results are calculated in your browser — nothing is sent to or stored on any server.</p>
+</section>
+<section class="faq" aria-label="Frequently asked questions about the Loan Calculator">
+<h2>Frequently asked questions</h2>
+<details><summary>What is the difference between loan amount and total repayment?</summary><p>The loan amount (principal) is what you borrow. The total repayment is the principal plus all interest charged over the tenure — the actual money that leaves your pocket.</p></details>
+<details><summary>Does a longer tenure mean a cheaper loan?</summary><p>A longer tenure lowers your monthly payment but increases the total interest paid over the life of the loan. A shorter tenure costs more per month but less overall.</p></details>
+<details><summary>Is this the same formula banks use?</summary><p>Yes — the calculator uses the standard reducing-balance EMI formula used by banks and NBFCs for retail loans.</p></details>
+</section>
+<section class="adbox" aria-hidden="true">Advertisement</section>
+</main>
+<footer>
+<div class="wrap foot-grid">
+<div><b>RStar7</b><p>Free online calculators and useful tools for everyday decisions.<br><a href="mailto:info@rstar7.com" style="color:inherit">info@rstar7.com</a> · <a href="https://wa.me/919063827617" rel="noopener" target="_blank" style="color:inherit">WhatsApp +91 90638 27617</a></p></div>
+<nav aria-label="Footer navigation">
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+<a href="../privacy.html">Privacy Policy</a>
+<a href="../terms.html">Terms of Use</a>
+<a href="../disclaimer.html">Disclaimer</a>
+</nav>
+<small>© <span id="yr">2026</span> RStar7. All rights reserved.</small>
+</div>
+</footer>
+<script src="../assets/calculators.js"></script>
+<script src="../assets/r7-ui.js"></script>
+</body>
+</html>
